@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image , TouchableOpacity} from 'react-native'
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 
 const FancyCard = () => {
@@ -15,9 +15,9 @@ const FancyCard = () => {
                         Learn about planets, moons, and asteroids.
                     </Text>
                     <TouchableOpacity style={styles.cardBodyButton}>
-                       <Text style= {styles.cardBodyButtonText}>
-                        Explore
-                       </Text>
+                        <Text style={styles.cardBodyButtonText}>
+                            Explore
+                        </Text>
                     </TouchableOpacity>
                 </View>
             </View>
@@ -35,16 +35,19 @@ const styles = StyleSheet.create({
         fontSize: 21
     },
     card: {
-        backgroundColor: "white",
+
         width: 300,
         height: 400,
         flex: 1,
         alignItems: 'center',
         justifyContent: 'space-evenly',
-        borderRadius: 10,
+        borderRadius: 12,
         marginLeft: 15
     },
-    cardElevated: {} ,
+    cardElevated: {
+        backgroundColor: "#FAE4CC",
+        elevation: 10, 
+    },
     cardImage: {
         height: 150,
         width: '80%',
@@ -53,19 +56,21 @@ const styles = StyleSheet.create({
     },
     cardBody: {
         width: '80%',
-        alignItems : 'center',
+        alignItems: 'center',
         height: '40%',
         justifyContent: 'space-between'
     },
     cardBodyTitle: {
         fontWeight: 'bold',
-        fontSize: 30
+        fontSize: 30,
+        color: '#5F0404'
     },
     cardBodyDesc: {
-        fontSize: 16
+        fontSize: 16,
+        color: '#8D1D09'
     },
     cardBodyButton: {
-        backgroundColor: '#71acffff',
+        backgroundColor: '#4E0207',
         width: '100%',
         alignItems: 'center',
         padding: 8,
@@ -73,7 +78,7 @@ const styles = StyleSheet.create({
     },
     cardBodyButtonText: {
         fontSize: 22,
-        color: 'white',
-      
+        color: '#FAE4CC',
+
     },
 })
