@@ -9,7 +9,6 @@ const App = () => {
   return (
     <SafeAreaView>
       <ScrollView >
-        {/* <Text style={styles.container}>App Components</Text> */}
         <FlatCards/>
         <ElevatedCards/>
       </ScrollView>
