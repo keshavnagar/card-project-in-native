@@ -11,11 +11,11 @@ const products = [
         description: "100% natural oil",
         rating: 4.1,
         reviews: 5802,
-        featureIconImage: "..Images/featureIconImage/lsicon_leaf-filled.svg",
-        image: "..Images/productImage.png",
+        featureIconImage: require("../Images/featureIconImage/lsicon_leaf-filled.svg"),
+        image: require("../Images/productImage.png"),
     },
     {
-        id: "1",
+        id: "2",
         name: "Beard oil - 100 ml",
         price: 299,
         oldPrice: 399,
@@ -23,11 +23,11 @@ const products = [
         description: "100% natural oil",
         rating: 4.1,
         reviews: 5802,
-        featureIconImage: "..Images/featureIconImage/lsicon_leaf-filled.svg",
-        image: "..Images/productImage.png",
+        featureIconImage: require("../Images/featureIconImage/lsicon_leaf-filled.svg"),
+        image: require("../Images/productImage.png"),
     },
     {
-        id: "1",
+        id: "3",
         name: "Beard oil - 100 ml",
         price: 299,
         oldPrice: 399,
@@ -35,11 +35,11 @@ const products = [
         description: "100% natural oil",
         rating: 4.1,
         reviews: 5802,
-        featureIconImage: "..Images/featureIconImage/lsicon_leaf-filled.svg",
-        image: "..Images/productImage.png",
+        featureIconImage: require("../Images/featureIconImage/lsicon_leaf-filled.svg"),
+        image: require("../Images/productImage.png"),
     },
     {
-        id: "1",
+        id: "4",
         name: "Beard oil - 100 ml",
         price: 299,
         oldPrice: 399,
@@ -47,8 +47,8 @@ const products = [
         description: "100% natural oil",
         rating: 4.1,
         reviews: 5802,
-        featureIconImage: "..Images/featureIconImage/lsicon_leaf-filled.svg",
-        image: '..Images/productImage.png',
+        featureIconImage: require("../Images/featureIconImage/lsicon_leaf-filled.svg"),
+        image: require("../Images/productImage.png"),
     }
 ];
 
@@ -62,7 +62,15 @@ const OurProducts = () => {
                     data={products} renderItem={(element) => {
                         return (
                             <View>
-                                <Image source={require(element.item.image)}style={styles.ImageStyle}/>
+                                <Image source={element.item.image} style={styles.ImageStyle} />
+                                <Text>{element.item.name}</Text>
+                                <Text>₹{element.item.price}</Text>
+                                <Text>{element.item.oldPrice}</Text>
+                                <Text>{element.item.discount}</Text>
+                                <Image source={element.item.featureIconImage} style={styles.ImageStyle} />
+                                <Text>{element.item.description}</Text>
+                                <Text>{element.item.rating}</Text>
+                                <Image source={require("..Image/featureIcon")} />
                             </View>
                         )
                     }}
