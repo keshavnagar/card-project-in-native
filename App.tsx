@@ -6,17 +6,19 @@ import ElevatedCards from './components/ElevatedCards'
 import FancyCard from './components/FancyCard'
 import ActionCard from './components/ActionCard'
 import FlatListEg from './components/FlatListEg'
+import OurProducts from './components/OurProducts'
 
 const App = () => {
   return (
     <SafeAreaView>
       <ScrollView >
-        <FlatCards />
+        {/* <FlatCards />
         <ElevatedCards />
         <FancyCard />
         <FancyCard />
         <ActionCard/>
-        <FlatListEg/>
+        <FlatListEg/> */}
+        <OurProducts/>
       </ScrollView>
     </SafeAreaView>
   )

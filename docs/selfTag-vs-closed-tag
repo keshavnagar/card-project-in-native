@@ -1,0 +1,17 @@
+there are two types of tags 
+
+first like 
+
+self closed tags
+
+<FlatList/>
+
+in this the slash put into end
+
+closed tags
+
+<View></View>
+
+here the slash is comes front 
+
+so this is simplet 
