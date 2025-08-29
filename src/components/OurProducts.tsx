@@ -11,8 +11,8 @@ const products = [
         description: "100% natural oil",
         rating: 4.1,
         reviews: 5802,
-        featureIconImage: require("../Images/featureIconImage/lsicon_leaf-filled.svg"),
-        image: require("../Images/productImage.png"),
+        featureIconImage: require("../Images/OurProduct/lsicon_leaf-filled.svg"),
+        image: require("../Images/OurProduct/productImage.png"),
     },
     {
         id: "2",
@@ -23,8 +23,8 @@ const products = [
         description: "100% natural oil",
         rating: 4.1,
         reviews: 5802,
-        featureIconImage: require("../Images/featureIconImage/lsicon_leaf-filled.svg"),
-        image: require("../Images/productImage.png"),
+        featureIconImage: require("../Images/OurProduct/lsicon_leaf-filled.svg"),
+        image: require("../Images/OurProduct/productImage.png"),
     },
     {
         id: "3",
@@ -35,8 +35,8 @@ const products = [
         description: "100% natural oil",
         rating: 4.1,
         reviews: 5802,
-        featureIconImage: require("../Images/featureIconImage/lsicon_leaf-filled.svg"),
-        image: require("../Images/productImage.png"),
+        featureIconImage: require("../Images/OurProduct/lsicon_leaf-filled.svg"),
+        image: require("../Images/OurProduct/productImage.png"),
     },
     {
         id: "4",
@@ -47,8 +47,8 @@ const products = [
         description: "100% natural oil",
         rating: 4.1,
         reviews: 5802,
-        featureIconImage: require("../Images/featureIconImage/lsicon_leaf-filled.svg"),
-        image: require("../Images/productImage.png"),
+        featureIconImage: require("../Images/OurProduct/lsicon_leaf-filled.svg"),
+        image: require("../Images/OurProduct/productImage.png"),
     }
 ];
 
@@ -70,7 +70,8 @@ const OurProducts = () => {
                                 <Image source={element.item.featureIconImage} style={styles.ImageStyle} />
                                 <Text>{element.item.description}</Text>
                                 <Text>{element.item.rating}</Text>
-                                <Image source={require("..Image/featureIcon")} />
+                               
+                               
                             </View>
                         )
                     }}
